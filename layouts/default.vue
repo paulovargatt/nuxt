@@ -1,5 +1,5 @@
 <template>
-  <v-app white>
+  <v-app light>
     <v-navigation-drawer
       :mini-variant="miniVariant"
       :clipped="clipped"
@@ -51,7 +51,11 @@
 </template>
 
 <script>
+  import Logo from '~/components/Logo.vue'
   export default {
+      components:{
+          Logo
+      },
     data() {
       return {
         clipped: false,
@@ -61,7 +65,8 @@
           { icon: 'apps', title: 'Welcome', to: '/' },
           { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
           { icon: 'code', title: 'Vargatt', to: '/vargatt' },
-          { icon: 'person', title: 'Users', to: '/users' }
+          { icon: 'person', title: 'Users', to: '/users' },
+          { icon: 'table', title: 'Produtos', to: '/produtos' }
         ],
         miniVariant: false,
         right: true,

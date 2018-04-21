@@ -5,9 +5,6 @@ const nodeExternals = require('webpack-node-externals')
 module.exports = {
   mode: 'universal',
 
-  /*
-  ** Headers of the page
-  */
   head: {
     title: pkg.name,
     meta: [
@@ -30,7 +27,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'vuetify/src/stylus/main.styl'
+    'vuetify/src/stylus/main.styl',
+    'assets/main.css'
   ],
 
   /*
@@ -62,7 +60,7 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
       if (ctx.isServer) {
         config.externals = [
           nodeExternals({

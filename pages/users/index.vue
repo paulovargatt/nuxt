@@ -1,13 +1,6 @@
 <template>
   <v-layout>
-    <v-flex text-xs-center>
-         <h1>Users Aki</h1>
-
-
-        <input class="blue-grey text--white" type="text" v-model="userId" />
-        <button @click="onLoadUser()" class="btn btn--small">Carregar</button>
-
-    </v-flex>
+    <p>Digite um user</p>
   </v-layout>
 </template>
 
@@ -23,7 +16,6 @@
         onLoadUser(){
           this.$router.push('/users/'+ this.userId)
         }
-    }
-
+    },
   }
 </script>

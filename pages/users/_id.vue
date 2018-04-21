@@ -9,3 +9,12 @@
     </v-flex>
   </v-layout>
 </template>
+
+<script>
+  export default {
+      validate(data){
+          console.log(data);
+          return true
+      }
+  }
+</script>
