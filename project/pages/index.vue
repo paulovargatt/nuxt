@@ -1,36 +1,30 @@
 <template>
   <div class="home-page">
     <section class="intro">
-      <h1>Veja as noticias</h1>
+      <!--<h1>Veja as noticias</h1>-->
+      <h2>Meu Blog</h2>
     </section>
 
-    <section class="featured-posts">
-      <PostPreview id="54" title="Vargatao" />
-      <PostPreview />
-      <PostPreview />
-      <PostPreview />
-      <PostPreview />
-      <PostPreview />
-    </section>
-
+        <PostList />
   </div>
 </template>
 
 <script>
-  import PostPreview from '@/components/Posts/PostPreview'
+  import PostList from '@/components/Posts/PostList'
   export default {
       components: {
-          PostPreview
+          PostList
       }
   }
 </script>
 
 <style scoped>
   .intro {
-    height: 100px;
+    height: 220px;
     position: relative;
     padding: 30px;
     box-sizing: border-box;
+    background-image: url('~assets/images/back.jpg');
     background-position: center;
     background-size: cover;
   }
@@ -55,8 +49,7 @@
       font-size: 2rem;
     }
   }
-
-  .featured-posts {
+  .post-list {
     display: flex;
     padding: 20px;
     box-sizing: border-box;
@@ -64,6 +57,7 @@
     align-items: center;
     justify-content: center;
   }
+
 
 
 </style>

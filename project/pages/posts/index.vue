@@ -1,8 +1,17 @@
 <template>
-    <section class="posts-page">
-        <h1>Oi</h1>
-    </section>
+    <div class="posts-page">
+      <PostList />
+    </div>
 </template>
+
+<script>
+    import PostList from '@/components/Posts/PostList'
+    export default {
+        components: {
+            PostList
+        }
+    }
+</script>
 
 <style scoped>
 
