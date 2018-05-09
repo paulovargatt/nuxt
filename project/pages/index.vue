@@ -4,7 +4,6 @@
       <!--<h1>Veja as noticias</h1>-->
       <h2>Meu Blog</h2>
     </section>
-
         <PostList />
   </div>
 </template>

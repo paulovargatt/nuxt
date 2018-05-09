@@ -1,9 +1,10 @@
 <template>
 
         <section class="post-list">
-            <PostPreview :is-admin="IsAdmin" id="54" title="Vargatao" />
-            <PostPreview />
-            <PostPreview />
+            <PostPreview  id="54"
+                          :is-admin="IsAdmin"
+                          title="Vargatao"
+                         previewText="PREVIEW TEXT" />
         </section>
 </template>
 
@@ -17,6 +18,10 @@
             isAdmin: {
                 type: Boolean,
                 default: false
+            },
+            posts: {
+                type: Array,
+                required: true
             }
         }
     }
